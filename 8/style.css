@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: #313866;
+  background: linear-gradient(90deg,   #313866 0%,  #504099 100%);
+  background: -moz-linear-gradient(90deg, #313866 0%,  #504099 100%);
+  background: -webkit-linear-gradient(90deg,  #313866 0%,#504099 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#FF1B6B", endColorstr="#45CAFF", GradientType=1);
+}
+
+.lydia-texto{
+  margin-left: 4rem;
+}
+
+.container-cartaoes{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 40%;
+  margin-left: 15%;
+}
+
+.cartao-perfil {
+  position: relative;
+  height: 31.25rem;
+  width: 28.125rem;
+  gap: 0px;
+  border-radius: 10px 10px 50% 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background: #4D3C77;
+  cursor: pointer;
+  transition: all 0.7s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 3rem;
+  margin-top: 6rem;
+}
+
+.secao-cabecalho {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  flex-direction: column;
+  transition: all 0.5s ease-in-out;
+}
+
+.perfil-foto {
+  height: 12.5rem;
+  width: 12.5rem;  
+  object-fit: contain;
+  border-radius: 50%;
+  transition: all 0.5s ease-in-out;
+}
+
+.descricao-perfil {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 70%;
+  padding: 10px;
+  opacity: 0;
+  transform: translateY(-110px);
+  transition: all 0.7s ease-in-out;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+}
+
+.icons i {
+  font-size: 30px;
+  color: #141414;
+  transition: all 0.5s ease-in-out;
+}
+
+.cartao-perfil:hover {
+  transform: scale(1.1);
+  border-radius: 10px 10px 10px 10px;
+  background: rgba(255, 255, 255, 0.61);
+  color: #000000;
+}
+
+#scott:hover{
+  transform: scale(1.1);
+  border-radius: 10px 10px 10px 10px;
+  background: #e70707;
+  color: #000000;
+}
+
+#allison:hover{
+  transform: scale(1.1);
+  border-radius: 10px 10px 10px 10px;
+  background: #c529ec;
+  color: #000000;
+}
+
+#stiles:hover{
+  transform: scale(1.1);
+  border-radius: 10px 10px 10px 10px;
+  background: #252525;
+  color: #fcfcfc;
+}
+
+#lydia:hover{
+  transform: scale(1.1);
+  border-radius: 10px 10px 10px 10px;
+  background: #916363;
+  color: #000000;
+}
+
+.cartao-perfil:hover .perfil-foto {
+  transform: translate(-150px, -50px);
+  height: 7.5rem;
+  width: 7.5rem;
+  background: #800080;
+}
+
+.cartao-perfil:hover .secao-cabecalho {
+  transform: translate(0px, -140px);
+  margin-left: 2.2rem;
+  
+}
+
+.cartao-perfil:hover .descricao-perfil {
+  opacity: 1;
+}
+
+.icons i:hover {
+  color: rgb(173, 47, 47);
+  transform: scale(1.2);
+  animation: shake 0.5s ease-in-out forwards;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0px);
+  }
+
+  25% {
+    transform: translateX(3px);
+  }
+
+  50% {
+    transform: translateX(0px);
+  }
+
+  75% {
+    transform: translateX(-3px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@media screen and (max-width: 1024px){
+  
+  .container-cartaoes {
+    margin-top: 110rem;
+    margin-left: 1.29rem;
+  }
+
+}
